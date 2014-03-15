@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#2c3e50"
+    >
+
+    <TextView
+        android:id="@+id/txtNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtStationeryName"
+        android:layout_alignBottom="@+id/txtStationeryName"
+        android:layout_marginRight="36dp"
+        android:layout_toLeftOf="@+id/txtRetrieved"
+        android:text="Need"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+       android:textColor="#ecf0f1"
+        />
+
+    <TextView
+        android:id="@+id/txtRetrieved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNeeded"
+        android:layout_alignBottom="@+id/txtNeeded"
+        android:layout_alignParentRight="true"
+        android:text="Actual"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#ecf0f1"
+        
+        android:layout_marginRight="8dp"
+        />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtStationeryName"
+        android:background="#2980b9" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtStationeryName"
+        android:layout_alignParentLeft="true"
+        android:src="@android:drawable/ic_menu_add" 
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txtStationeryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Dept"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ecf0f1" />
+
+</RelativeLayout>

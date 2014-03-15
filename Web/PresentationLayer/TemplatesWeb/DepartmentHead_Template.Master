@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DepartmentHead_Template.master.cs" Inherits="PresentationLayer.TemplatesWeb.DepartmentHead_Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="/assets/css/normal.bootstarp.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/jquery-ui/css/jquery-ui-smotness.css" />
+    <link href="/assets/css/department_head.css" rel="stylesheet" type="text/css" />
+    
+    <script src="/assets/js/jquery-1.10.2.min.js" type="text/javascript" ></script>
+    <script src="/assets/jquery-ui/js/jquery-ui-1.10.3.custom.js"> </script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.extensions.js" type="text/javascript"></script>
+    <script src="/assets/js/json.js" type="text/javascript" ></script>
+    <script src="/assets/js/global.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <h2>Logic University</h2>
+           
+        </div>
+        
+        <table style="width:100%;">
+            <tr>
+                <td id="content">
+                    <form id="form1" runat="server">
+                    <script type="text/javascript">
+                        $(function () { $("#flash-message").flashMessage(); });
+                        </script>
+                        <div id="flash-message"></div>
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </form>
+                </td>
+                <td id="sidebar" style="vertical-align:top;">
+                    <div id="user-area">
+                    
+                    <form class="navbar-form">
+                        
+                      <div class="btn-group">
+                          
+						<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="icon-user icon-black"></i> <asp:Label ID="ui_username_label" runat="server" Text=""></asp:Label> <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+                        	<li><a href="AccountEdit.aspx"><i class="icon-edit"></i> Account Settings</a></li>
+							<li><a href="/Logout.aspx"><i class="icon-off"></i> Logout</a></li>
+					   </div>
+                    </form> 
+                    <div class="clearfix"></div>
+                    <ul id="sidebar-menu">
+                        <li><a href="ApproveRequisition.aspx">Stationery Requests</a></li>
+                        <li><a href="UserDelegate.aspx">Assign Head Authority</a></li>
+                        <li><a href="HeadReport.aspx">Analysis Report</a></li>
+                        <li><a href="Preference.aspx">Department Preference</a></li>
+                    </ul>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#wrapper").css("min-height", $(window).height());
+            
+        });
+ </script>     
+</body>
+</html>
+

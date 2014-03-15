@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DataContextModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CollectionPoints" EntityType="DataContextModel.CollectionPoint" />
+    <EntitySet Name="Departments" EntityType="DataContextModel.Department" />
+    <EntitySet Name="Disbursements" EntityType="DataContextModel.Disbursement" />
+    <EntitySet Name="DisbursementDetails" EntityType="DataContextModel.DisbursementDetail" />
+    <EntitySet Name="Discrepancies" EntityType="DataContextModel.Discrepancy" />
+    <EntitySet Name="OAuths" EntityType="DataContextModel.OAuth" />
+    <EntitySet Name="Requisitions" EntityType="DataContextModel.Requisition" />
+    <EntitySet Name="RequisitionFullfillments" EntityType="DataContextModel.RequisitionFullfillment" />
+    <EntitySet Name="Stationeries" EntityType="DataContextModel.Stationery" />
+    <EntitySet Name="StationeryCategories" EntityType="DataContextModel.StationeryCategory" />
+    <EntitySet Name="StockTransactions" EntityType="DataContextModel.StockTransaction" />
+    <EntitySet Name="Suppliers" EntityType="DataContextModel.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="DataContextModel.sysdiagram" />
+    <EntitySet Name="Users" EntityType="DataContextModel.User" />
+    <EntitySet Name="UserDelegates" EntityType="DataContextModel.UserDelegate" />
+    <EntitySet Name="UserTypes" EntityType="DataContextModel.UserType" />
+    <EntitySet Name="Discrepancy_View" EntityType="DataContextModel.Discrepancy_View" />
+    <EntitySet Name="Fulfillment_View" EntityType="DataContextModel.Fulfillment_View" />
+    <EntitySet Name="GetDepartmentForFulfillments" EntityType="DataContextModel.GetDepartmentForFulfillment" />
+    <EntitySet Name="GetDepartmentFulfillments" EntityType="DataContextModel.GetDepartmentFulfillment" />
+    <EntitySet Name="GetDepartmentInfoes" EntityType="DataContextModel.GetDepartmentInfo" />
+    <EntitySet Name="RequisitionViews" EntityType="DataContextModel.RequisitionView" />
+    <EntitySet Name="RetrievalFormDetails_View" EntityType="DataContextModel.RetrievalFormDetails_View" />
+    <EntitySet Name="RetrievelFormMaster_View" EntityType="DataContextModel.RetrievelFormMaster_View" />
+    <EntitySet Name="StationeryViews" EntityType="DataContextModel.StationeryView" />
+    <EntitySet Name="Supervisor_Discrepancy_View" EntityType="DataContextModel.Supervisor_Discrepancy_View" />
+    <EntitySet Name="UserViews" EntityType="DataContextModel.UserView" />
+    <AssociationSet Name="FK_Department_CollectionPoint" Association="DataContextModel.FK_Department_CollectionPoint">
+      <End Role="CollectionPoint" EntitySet="CollectionPoints" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Disbursement_Department" Association="DataContextModel.FK_Disbursement_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Disbursement" EntitySet="Disbursements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisition_Department" Association="DataContextModel.FK_Requisition_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequisitionFullfillment_Department" Association="DataContextModel.FK_RequisitionFullfillment_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="RequisitionFullfillment" EntitySet="RequisitionFullfillments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Department" Association="DataContextModel.FK_User_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDelegate_Department" Association="DataContextModel.FK_UserDelegate_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="UserDelegate" EntitySet="UserDelegates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DisbursementDetails_Disbursement" Association="DataContextModel.FK_DisbursementDetails_Disbursement">
+      <End Role="Disbursement" EntitySet="Disbursements" />
+      <End Role="DisbursementDetails" EntitySet="DisbursementDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DisbursementDetails_Stationery" Association="DataContextModel.FK_DisbursementDetails_Stationery">
+      <End Role="Stationery" EntitySet="Stationeries" />
+      <End Role="DisbursementDetails" EntitySet="DisbursementDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discrepancy_Stationery" Association="DataContextModel.FK_Discrepancy_Stationery">
+      <End Role="Stationery" EntitySet="Stationeries" />
+      <End Role="Discrepancy" EntitySet="Discrepancies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OAuth_User" Association="DataContextModel.FK_OAuth_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="OAuth" EntitySet="OAuths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisition_Stationery" Association="DataContextModel.FK_Requisition_Stationery">
+      <End Role="Stationery" EntitySet="Stationeries" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisition_User" Association="DataContextModel.FK_Requisition_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisition_User_Approved_By" Association="DataContextModel.FK_Requisition_User_Approved_By">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequisitionFullfillment_Stationery" Association="DataContextModel.FK_RequisitionFullfillment_Stationery">
+      <End Role="Stationery" EntitySet="Stationeries" />
+      <End Role="RequisitionFullfillment" EntitySet="RequisitionFullfillments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stationery_StationeryCategory" Association="DataContextModel.FK_Stationery_StationeryCategory">
+      <End Role="StationeryCategory" EntitySet="StationeryCategories" />
+      <End Role="Stationery" EntitySet="Stationeries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stationery_Supplier1" Association="DataContextModel.FK_Stationery_Supplier1">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Stationery" EntitySet="Stationeries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stationery_Supplier2" Association="DataContextModel.FK_Stationery_Supplier2">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Stationery" EntitySet="Stationeries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stationery_Supplier3" Association="DataContextModel.FK_Stationery_Supplier3">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Stationery" EntitySet="Stationeries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTransaction_Stationery" Association="DataContextModel.FK_StockTransaction_Stationery">
+      <End Role="Stationery" EntitySet="Stationeries" />
+      <End Role="StockTransaction" EntitySet="StockTransactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserType" Association="DataContextModel.FK_User_UserType">
+      <End Role="UserType" EntitySet="UserTypes" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDelegate_User_By" Association="DataContextModel.FK_UserDelegate_User_By">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDelegate" EntitySet="UserDelegates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDelegate_User_To" Association="DataContextModel.FK_UserDelegate_User_To">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDelegate" EntitySet="UserDelegates" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CollectionPoint">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Departments" Relationship="DataContextModel.FK_Department_CollectionPoint" FromRole="CollectionPoint" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="contact_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department_head" Type="Int32" />
+    <Property Name="collection_point" Type="Int32" Nullable="false" />
+    <Property Name="representative_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CollectionPoint" Relationship="DataContextModel.FK_Department_CollectionPoint" FromRole="Department" ToRole="CollectionPoint" />
+    <NavigationProperty Name="Disbursements" Relationship="DataContextModel.FK_Disbursement_Department" FromRole="Department" ToRole="Disbursement" />
+    <NavigationProperty Name="Requisitions" Relationship="DataContextModel.FK_Requisition_Department" FromRole="Department" ToRole="Requisition" />
+    <NavigationProperty Name="RequisitionFullfillments" Relationship="DataContextModel.FK_RequisitionFullfillment_Department" FromRole="Department" ToRole="RequisitionFullfillment" />
+    <NavigationProperty Name="Users" Relationship="DataContextModel.FK_User_Department" FromRole="Department" ToRole="User" />
+    <NavigationProperty Name="UserDelegates" Relationship="DataContextModel.FK_UserDelegate_Department" FromRole="Department" ToRole="UserDelegate" />
+  </EntityType>
+  <EntityType Name="Disbursement">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <Property Name="department_rept" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="distributed_date" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Department1" Relationship="DataContextModel.FK_Disbursement_Department" FromRole="Disbursement" ToRole="Department" />
+    <NavigationProperty Name="DisbursementDetails" Relationship="DataContextModel.FK_DisbursementDetails_Disbursement" FromRole="Disbursement" ToRole="DisbursementDetails" />
+  </EntityType>
+  <EntityType Name="DisbursementDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="disbursement" Type="Int32" Nullable="false" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="requested_quantity" Type="Int32" Nullable="false" />
+    <Property Name="fulfilled_quantity" Type="Int32" Nullable="false" />
+    <Property Name="previous_unfulfilled_quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Disbursement1" Relationship="DataContextModel.FK_DisbursementDetails_Disbursement" FromRole="DisbursementDetails" ToRole="Disbursement" />
+    <NavigationProperty Name="Stationery1" Relationship="DataContextModel.FK_DisbursementDetails_Stationery" FromRole="DisbursementDetails" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="Discrepancy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="datetime_reported" Type="DateTime" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Stationery1" Relationship="DataContextModel.FK_Discrepancy_Stationery" FromRole="Discrepancy" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="OAuth">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_obj" Type="Int32" Nullable="false" />
+    <Property Name="access_token" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="User" Relationship="DataContextModel.FK_OAuth_User" FromRole="OAuth" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Requisition">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="user_obj" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="reject_remark" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="datetime_requested" Type="DateTime" Nullable="false" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <Property Name="user_approved_by" Type="Int32" />
+    <NavigationProperty Name="Department1" Relationship="DataContextModel.FK_Requisition_Department" FromRole="Requisition" ToRole="Department" />
+    <NavigationProperty Name="Stationery1" Relationship="DataContextModel.FK_Requisition_Stationery" FromRole="Requisition" ToRole="Stationery" />
+    <NavigationProperty Name="User" Relationship="DataContextModel.FK_Requisition_User" FromRole="Requisition" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="DataContextModel.FK_Requisition_User_Approved_By" FromRole="Requisition" ToRole="User" />
+  </EntityType>
+  <EntityType Name="RequisitionFullfillment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="requested_quantity" Type="Int32" Nullable="false" />
+    <Property Name="fulfill_quantity" Type="Int32" Nullable="false" />
+    <Property Name="unfulfill_quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department1" Relationship="DataContextModel.FK_RequisitionFullfillment_Department" FromRole="RequisitionFullfillment" ToRole="Department" />
+    <NavigationProperty Name="Stationery1" Relationship="DataContextModel.FK_RequisitionFullfillment_Stationery" FromRole="RequisitionFullfillment" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="Stationery">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="category" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="reorder_level" Type="Int32" Nullable="false" />
+    <Property Name="reorder_quantity" Type="Int32" Nullable="false" />
+    <Property Name="quantity_in_stock" Type="Int32" Nullable="false" />
+    <Property Name="pending_quantity_to_distribute" Type="Int32" Nullable="false" />
+    <Property Name="first_supplier" Type="Int32" />
+    <Property Name="second_supplier" Type="Int32" />
+    <Property Name="third_supplier" Type="Int32" />
+    <Property Name="unit_of_measure" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="bin" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="DisbursementDetails" Relationship="DataContextModel.FK_DisbursementDetails_Stationery" FromRole="Stationery" ToRole="DisbursementDetails" />
+    <NavigationProperty Name="Discrepancies" Relationship="DataContextModel.FK_Discrepancy_Stationery" FromRole="Stationery" ToRole="Discrepancy" />
+    <NavigationProperty Name="Requisitions" Relationship="DataContextModel.FK_Requisition_Stationery" FromRole="Stationery" ToRole="Requisition" />
+    <NavigationProperty Name="RequisitionFullfillments" Relationship="DataContextModel.FK_RequisitionFullfillment_Stationery" FromRole="Stationery" ToRole="RequisitionFullfillment" />
+    <NavigationProperty Name="StationeryCategory" Relationship="DataContextModel.FK_Stationery_StationeryCategory" FromRole="Stationery" ToRole="StationeryCategory" />
+    <NavigationProperty Name="Supplier" Relationship="DataContextModel.FK_Stationery_Supplier1" FromRole="Stationery" ToRole="Supplier" />
+    <NavigationProperty Name="Supplier1" Relationship="DataContextModel.FK_Stationery_Supplier2" FromRole="Stationery" ToRole="Supplier" />
+    <NavigationProperty Name="Supplier2" Relationship="DataContextModel.FK_Stationery_Supplier3" FromRole="Stationery" ToRole="Supplier" />
+    <NavigationProperty Name="StockTransactions" Relationship="DataContextModel.FK_StockTransaction_Stationery" FromRole="Stationery" ToRole="StockTransaction" />
+  </EntityType>
+  <EntityType Name="StationeryCategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Stationeries" Relationship="DataContextModel.FK_Stationery_StationeryCategory" FromRole="StationeryCategory" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="StockTransaction">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="balance" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="quantity" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="datetime_inserted" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Stationery1" Relationship="DataContextModel.FK_StockTransaction_Stationery" FromRole="StockTransaction" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="supplier_name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="contact_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="phone_number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fax_number" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Stationeries" Relationship="DataContextModel.FK_Stationery_Supplier1" FromRole="Supplier" ToRole="Stationery" />
+    <NavigationProperty Name="Stationeries1" Relationship="DataContextModel.FK_Stationery_Supplier2" FromRole="Supplier" ToRole="Stationery" />
+    <NavigationProperty Name="Stationeries2" Relationship="DataContextModel.FK_Stationery_Supplier3" FromRole="Supplier" ToRole="Stationery" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="firstname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="phone_number" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department" Type="Int32" />
+    <Property Name="user_type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department1" Relationship="DataContextModel.FK_User_Department" FromRole="User" ToRole="Department" />
+    <NavigationProperty Name="OAuths" Relationship="DataContextModel.FK_OAuth_User" FromRole="User" ToRole="OAuth" />
+    <NavigationProperty Name="Requisitions" Relationship="DataContextModel.FK_Requisition_User" FromRole="User" ToRole="Requisition" />
+    <NavigationProperty Name="Requisitions1" Relationship="DataContextModel.FK_Requisition_User_Approved_By" FromRole="User" ToRole="Requisition" />
+    <NavigationProperty Name="UserType" Relationship="DataContextModel.FK_User_UserType" FromRole="User" ToRole="UserType" />
+    <NavigationProperty Name="UserDelegates" Relationship="DataContextModel.FK_UserDelegate_User_By" FromRole="User" ToRole="UserDelegate" />
+    <NavigationProperty Name="UserDelegates1" Relationship="DataContextModel.FK_UserDelegate_User_To" FromRole="User" ToRole="UserDelegate" />
+  </EntityType>
+  <EntityType Name="UserDelegate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_to" Type="Int32" Nullable="false" />
+    <Property Name="user_by" Type="Int32" Nullable="false" />
+    <Property Name="date_from" Type="DateTime" Nullable="false" />
+    <Property Name="date_to" Type="DateTime" Nullable="false" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department1" Relationship="DataContextModel.FK_UserDelegate_Department" FromRole="UserDelegate" ToRole="Department" />
+    <NavigationProperty Name="User" Relationship="DataContextModel.FK_UserDelegate_User_By" FromRole="UserDelegate" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="DataContextModel.FK_UserDelegate_User_To" FromRole="UserDelegate" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="DataContextModel.FK_User_UserType" FromRole="UserType" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Discrepancy_View">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="quantity" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="stationery_name" />
+      <PropertyRef Name="code" />
+      <PropertyRef Name="price" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="datetime_reported" Type="DateTime" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fulfillment_View">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="department" />
+      <PropertyRef Name="stationery" />
+      <PropertyRef Name="stationery_name" />
+      <PropertyRef Name="requested_quantity" />
+      <PropertyRef Name="fulfill_quantity" />
+      <PropertyRef Name="unfulfill_quantity" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="requested_quantity" Type="Int32" Nullable="false" />
+    <Property Name="fulfill_quantity" Type="Int32" Nullable="false" />
+    <Property Name="unfulfill_quantity" Type="Int32" Nullable="false" />
+    <Property Name="stock_control" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GetDepartmentForFulfillment">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="department_name" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="department_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="representative_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GetDepartmentFulfillment">
+    <Key>
+      <PropertyRef Name="department_name" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="department_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GetDepartmentInfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="code" />
+      <PropertyRef Name="department_name" />
+      <PropertyRef Name="collection_point" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="contact_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department_head" Type="Int32" />
+    <Property Name="collection_point" Type="Int32" Nullable="false" />
+    <Property Name="representative_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RequisitionView">
+    <Key>
+      <PropertyRef Name="quantity" />
+      <PropertyRef Name="stationery" />
+      <PropertyRef Name="requisition_id" />
+      <PropertyRef Name="user_obj" />
+      <PropertyRef Name="stationery_name" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="stationery_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="department" />
+    </Key>
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+    <Property Name="requisition_id" Type="Int32" Nullable="false" />
+    <Property Name="user_obj" Type="Int32" Nullable="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="stationery_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department" Type="Int32" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="RetrievalFormDetails_View">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="department_name" />
+      <PropertyRef Name="stationery" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="department_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Needed" Type="Int32" />
+    <Property Name="Actual" Type="Int32" />
+    <Property Name="stationery" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RetrievelFormMaster_View">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="stationery_name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Needed" Type="Int32" />
+    <Property Name="Retrieved" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StationeryView">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="code" />
+      <PropertyRef Name="stationery_name" />
+      <PropertyRef Name="category" />
+      <PropertyRef Name="price" />
+      <PropertyRef Name="reorder_level" />
+      <PropertyRef Name="reorder_quantity" />
+      <PropertyRef Name="quantity_in_stock" />
+      <PropertyRef Name="pending_quantity_to_distribute" />
+      <PropertyRef Name="unit_of_measure" />
+    </Key>
+    <Property Name="category_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="supplier_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="category" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="reorder_level" Type="Int32" Nullable="false" />
+    <Property Name="reorder_quantity" Type="Int32" Nullable="false" />
+    <Property Name="quantity_in_stock" Type="Int32" Nullable="false" />
+    <Property Name="pending_quantity_to_distribute" Type="Int32" Nullable="false" />
+    <Property Name="first_supplier" Type="Int32" />
+    <Property Name="second_supplier" Type="Int32" />
+    <Property Name="third_supplier" Type="Int32" />
+    <Property Name="unit_of_measure" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="bin" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="supplier_code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="available_quantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Supervisor_Discrepancy_View">
+    <Key>
+      <PropertyRef Name="stationery_name" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="quantity" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="price" />
+      <PropertyRef Name="totalprice" />
+    </Key>
+    <Property Name="stationery_name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="datetime_reported" Type="DateTime" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="totalprice" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserView">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="password" />
+      <PropertyRef Name="user_type" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="firstname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="phone_number" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department" Type="Int32" />
+    <Property Name="user_type" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="department_name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Expr1" Type="Int32" />
+    <Property Name="Expr2" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Department_CollectionPoint">
+    <End Role="CollectionPoint" Type="DataContextModel.CollectionPoint" Multiplicity="1" />
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CollectionPoint">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="collection_point" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Disbursement_Department">
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="1" />
+    <End Role="Disbursement" Type="DataContextModel.Disbursement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Disbursement">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisition_Department">
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="1" />
+    <End Role="Requisition" Type="DataContextModel.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequisitionFullfillment_Department">
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="1" />
+    <End Role="RequisitionFullfillment" Type="DataContextModel.RequisitionFullfillment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RequisitionFullfillment">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Department">
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="0..1" />
+    <End Role="User" Type="DataContextModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDelegate_Department">
+    <End Role="Department" Type="DataContextModel.Department" Multiplicity="1" />
+    <End Role="UserDelegate" Type="DataContextModel.UserDelegate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UserDelegate">
+        <PropertyRef Name="department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DisbursementDetails_Disbursement">
+    <End Role="Disbursement" Type="DataContextModel.Disbursement" Multiplicity="1" />
+    <End Role="DisbursementDetails" Type="DataContextModel.DisbursementDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Disbursement">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DisbursementDetails">
+        <PropertyRef Name="disbursement" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DisbursementDetails_Stationery">
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="1" />
+    <End Role="DisbursementDetails" Type="DataContextModel.DisbursementDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stationery">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DisbursementDetails">
+        <PropertyRef Name="stationery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discrepancy_Stationery">
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="1" />
+    <End Role="Discrepancy" Type="DataContextModel.Discrepancy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stationery">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Discrepancy">
+        <PropertyRef Name="stationery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OAuth_User">
+    <End Role="User" Type="DataContextModel.User" Multiplicity="1" />
+    <End Role="OAuth" Type="DataContextModel.OAuth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OAuth">
+        <PropertyRef Name="user_obj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisition_Stationery">
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="1" />
+    <End Role="Requisition" Type="DataContextModel.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stationery">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="stationery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisition_User">
+    <End Role="User" Type="DataContextModel.User" Multiplicity="1" />
+    <End Role="Requisition" Type="DataContextModel.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="user_obj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisition_User_Approved_By">
+    <End Role="User" Type="DataContextModel.User" Multiplicity="0..1" />
+    <End Role="Requisition" Type="DataContextModel.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="user_approved_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequisitionFullfillment_Stationery">
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="1" />
+    <End Role="RequisitionFullfillment" Type="DataContextModel.RequisitionFullfillment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stationery">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RequisitionFullfillment">
+        <PropertyRef Name="stationery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stationery_StationeryCategory">
+    <End Role="StationeryCategory" Type="DataContextModel.StationeryCategory" Multiplicity="1" />
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryCategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Stationery">
+        <PropertyRef Name="category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stationery_Supplier1">
+    <End Role="Supplier" Type="DataContextModel.Supplier" Multiplicity="0..1" />
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Stationery">
+        <PropertyRef Name="first_supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stationery_Supplier2">
+    <End Role="Supplier" Type="DataContextModel.Supplier" Multiplicity="0..1" />
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Stationery">
+        <PropertyRef Name="second_supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stationery_Supplier3">
+    <End Role="Supplier" Type="DataContextModel.Supplier" Multiplicity="0..1" />
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Stationery">
+        <PropertyRef Name="third_supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTransaction_Stationery">
+    <End Role="Stationery" Type="DataContextModel.Stationery" Multiplicity="1" />
+    <End Role="StockTransaction" Type="DataContextModel.StockTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stationery">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="StockTransaction">
+        <PropertyRef Name="stationery" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserType">
+    <End Role="UserType" Type="DataContextModel.UserType" Multiplicity="1" />
+    <End Role="User" Type="DataContextModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="user_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDelegate_User_By">
+    <End Role="User" Type="DataContextModel.User" Multiplicity="1" />
+    <End Role="UserDelegate" Type="DataContextModel.UserDelegate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UserDelegate">
+        <PropertyRef Name="user_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDelegate_User_To">
+    <End Role="User" Type="DataContextModel.User" Multiplicity="1" />
+    <End Role="UserDelegate" Type="DataContextModel.UserDelegate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UserDelegate">
+        <PropertyRef Name="user_to" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

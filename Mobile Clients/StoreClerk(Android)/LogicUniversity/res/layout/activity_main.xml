@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnRetrievalList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text=" Retrieval List" 
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_pensils_small"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center"
+        android:textSize="20dp"
+        android:textScaleX="1.2"
+     	style="@style/btnStyleFlat"
+        />
+
+    <Button
+        android:id="@+id/btnFulfillment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRetrievalList"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnRetrievalList"
+        android:layout_marginTop="10dp"
+        android:text=" Requisition Fulfillment" 
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_list_board_small"
+        android:gravity="left|center"
+        android:textSize="20dp"
+        android:textScaleX="1.2"
+        style="@style/btnStyleFlat"
+        />
+
+    <Button
+        android:id="@+id/btnUserSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnReportDiscrepancy"
+        android:layout_marginTop="10dp"
+        android:text=" User Setting" 
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/user_files_icon_small"
+        android:gravity="left|center"
+        android:textSize="20dp"
+        android:textScaleX="1.2"
+        style="@style/btnStyleFlat"
+        />
+
+    <Button
+        android:id="@+id/btnReportDiscrepancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnFulfillment"
+        android:layout_marginTop="10dp"
+        android:text=" Report Discrepancy" 
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/icon_broken_small"
+        android:gravity="left|center"
+        android:textSize="20dp"
+        android:textScaleX="1.2"
+        style="@style/btnStyleFlat"
+        />
+
+</RelativeLayout>

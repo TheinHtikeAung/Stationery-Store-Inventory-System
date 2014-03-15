@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/mnuSave" android:title="@string/munSave"
+        android:showAsAction="always"
+        ></item>
+    <item android:id="@+id/mnuReportDiscrepancy" android:title="@string/lblReportDiscrepancyItem"></item>
+
+</menu>

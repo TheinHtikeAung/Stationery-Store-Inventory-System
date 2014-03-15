@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+   <!--   <EditText
+        android:id="@+id/searchString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+         android:hint="Search Stationary..."
+        android:ems="18" >
+    </EditText>
+
+    <ListView
+        android:id="@+id/stationaryListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchString" >
+    </ListView>-->
+
+    <AutoCompleteTextView
+        android:id="@+id/stationary_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Search Stationary..." >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/checkStationaryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stationary_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Request" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stationary_search"
+        android:layout_below="@+id/stationary_search"
+        android:layout_marginTop="14dp"
+        android:hint="quantity"
+        android:ems="10" />
+
+</RelativeLayout>

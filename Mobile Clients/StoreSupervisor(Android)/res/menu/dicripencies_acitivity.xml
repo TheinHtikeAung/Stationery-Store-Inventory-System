@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_approveall"
+        android:showAsAction="always"
+        android:orderInCategory="100"
+        android:title="Approve All"/>
+	<item
+        android:id="@+id/action_logout"
+        android:showAsAction="never"
+        android:orderInCategory="100"
+        android:title="Logout"/>
+</menu>

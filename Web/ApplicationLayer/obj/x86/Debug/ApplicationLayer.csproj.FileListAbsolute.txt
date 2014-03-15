@@ -1,0 +1,6 @@
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.pdb
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\x86\Debug\ApplicationLayer.pdb
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll.config
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\x86\Debug\ApplicationLayer.dll

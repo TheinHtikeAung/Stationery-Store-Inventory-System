@@ -1,0 +1,12 @@
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll.config
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.pdb
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ApplicationLayer.dll
+C:\Users\yemaw\Desktop\Team9_AD_Root\trunk\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ApplicationLayer.pdb
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll.config
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.dll
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\bin\Debug\ApplicationLayer.pdb
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ApplicationLayer.dll
+C:\Users\YeMaw\Desktop\ISS AD Deployment Server Version\StationeryStoreAutomation_Team9\ApplicationLayer\obj\Debug\ApplicationLayer.pdb

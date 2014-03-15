@@ -1,0 +1,20 @@
+Requisition Table Flags
+-----------------------
+pending - 0
+approved - 1
+rejected - 2
+processing - 3
+distributed - 4
+
+UserType Table Flags
+--------------------
+Department Employee - 1
+Department Employee With Head Authority - 2
+Department Head - 3
+Store Clerk - 4
+Store Supervisor - 5
+Store Manager - 6
+
+
+* Need To Prefill User And UserTypes For First Time Login
+* Encrypted String for password "admin" is "726141362812145772051475542201921052"

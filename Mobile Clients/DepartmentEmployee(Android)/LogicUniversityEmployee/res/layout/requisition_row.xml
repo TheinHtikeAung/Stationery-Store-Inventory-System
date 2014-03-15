@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/requisition_stationaryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stationary Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/requisition_stationaryQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/requisition_stationaryName"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/requisition_stationaryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/requisition_stationaryName"
+        android:layout_marginRight="16dp"
+        android:text="Septermber,10 2013"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

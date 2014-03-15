@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9DDFFA817E4513E0036F1F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DDFFA717E4513E0036F1F4 /* UIKit.framework */; };
+		C9DDFFAA17E4513E0036F1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DDFFA917E4513E0036F1F4 /* Foundation.framework */; };
+		C9DDFFAC17E4513E0036F1F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DDFFAB17E4513E0036F1F4 /* CoreGraphics.framework */; };
+		C9DDFFB217E4513E0036F1F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFB017E4513E0036F1F4 /* InfoPlist.strings */; };
+		C9DDFFB417E4513E0036F1F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDFFB317E4513E0036F1F4 /* main.m */; };
+		C9DDFFB817E4513E0036F1F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDFFB717E4513E0036F1F4 /* AppDelegate.m */; };
+		C9DDFFBA17E4513E0036F1F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFB917E4513E0036F1F4 /* Default.png */; };
+		C9DDFFBC17E4513E0036F1F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFBB17E4513E0036F1F4 /* Default@2x.png */; };
+		C9DDFFBE17E4513E0036F1F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFBD17E4513E0036F1F4 /* Default-568h@2x.png */; };
+		C9DDFFC117E4513E0036F1F4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFBF17E4513E0036F1F4 /* MainStoryboard.storyboard */; };
+		C9DDFFC417E4513E0036F1F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDFFC317E4513E0036F1F4 /* ViewController.m */; };
+		C9DDFFCB17E4534E0036F1F4 /* icon_loop_57.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFCA17E4534E0036F1F4 /* icon_loop_57.png */; };
+		C9DDFFCD17E453540036F1F4 /* icon_loop_114.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFCC17E453540036F1F4 /* icon_loop_114.png */; };
+		C9DDFFCF17E467720036F1F4 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFCE17E467720036F1F4 /* icon_57.png */; };
+		C9DDFFD117E467E10036F1F4 /* icon_114_.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DDFFD017E467E10036F1F4 /* icon_114_.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9DDFFA417E4513E0036F1F4 /* Logic Uni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logic Uni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DDFFA717E4513E0036F1F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9DDFFA917E4513E0036F1F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9DDFFAB17E4513E0036F1F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9DDFFAF17E4513E0036F1F4 /* Logic University-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Logic University-Info.plist"; sourceTree = "<group>"; };
+		C9DDFFB117E4513E0036F1F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9DDFFB317E4513E0036F1F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9DDFFB517E4513E0036F1F4 /* Logic University-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Logic University-Prefix.pch"; sourceTree = "<group>"; };
+		C9DDFFB617E4513E0036F1F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9DDFFB717E4513E0036F1F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9DDFFB917E4513E0036F1F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C9DDFFBB17E4513E0036F1F4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C9DDFFBD17E4513E0036F1F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C9DDFFC017E4513E0036F1F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C9DDFFC217E4513E0036F1F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9DDFFC317E4513E0036F1F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9DDFFCA17E4534E0036F1F4 /* icon_loop_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_loop_57.png; sourceTree = "<group>"; };
+		C9DDFFCC17E453540036F1F4 /* icon_loop_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_loop_114.png; sourceTree = "<group>"; };
+		C9DDFFCE17E467720036F1F4 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		C9DDFFD017E467E10036F1F4 /* icon_114_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114_.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9DDFFA117E4513E0036F1F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDFFA817E4513E0036F1F4 /* UIKit.framework in Frameworks */,
+				C9DDFFAA17E4513E0036F1F4 /* Foundation.framework in Frameworks */,
+				C9DDFFAC17E4513E0036F1F4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9DDFF9B17E4513D0036F1F4 = {
+			isa = PBXGroup;
+			children = (
+				C9DDFFD017E467E10036F1F4 /* icon_114_.png */,
+				C9DDFFCE17E467720036F1F4 /* icon_57.png */,
+				C9DDFFCC17E453540036F1F4 /* icon_loop_114.png */,
+				C9DDFFCA17E4534E0036F1F4 /* icon_loop_57.png */,
+				C9DDFFAD17E4513E0036F1F4 /* Logic University */,
+				C9DDFFA617E4513E0036F1F4 /* Frameworks */,
+				C9DDFFA517E4513E0036F1F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9DDFFA517E4513E0036F1F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDFFA417E4513E0036F1F4 /* Logic Uni.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9DDFFA617E4513E0036F1F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDFFA717E4513E0036F1F4 /* UIKit.framework */,
+				C9DDFFA917E4513E0036F1F4 /* Foundation.framework */,
+				C9DDFFAB17E4513E0036F1F4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9DDFFAD17E4513E0036F1F4 /* Logic University */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDFFB617E4513E0036F1F4 /* AppDelegate.h */,
+				C9DDFFB717E4513E0036F1F4 /* AppDelegate.m */,
+				C9DDFFBF17E4513E0036F1F4 /* MainStoryboard.storyboard */,
+				C9DDFFC217E4513E0036F1F4 /* ViewController.h */,
+				C9DDFFC317E4513E0036F1F4 /* ViewController.m */,
+				C9DDFFAE17E4513E0036F1F4 /* Supporting Files */,
+			);
+			path = "Logic University";
+			sourceTree = "<group>";
+		};
+		C9DDFFAE17E4513E0036F1F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDFFAF17E4513E0036F1F4 /* Logic University-Info.plist */,
+				C9DDFFB017E4513E0036F1F4 /* InfoPlist.strings */,
+				C9DDFFB317E4513E0036F1F4 /* main.m */,
+				C9DDFFB517E4513E0036F1F4 /* Logic University-Prefix.pch */,
+				C9DDFFB917E4513E0036F1F4 /* Default.png */,
+				C9DDFFBB17E4513E0036F1F4 /* Default@2x.png */,
+				C9DDFFBD17E4513E0036F1F4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9DDFFA317E4513E0036F1F4 /* Logic Uni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DDFFC717E4513E0036F1F4 /* Build configuration list for PBXNativeTarget "Logic Uni" */;
+			buildPhases = (
+				C9DDFFA017E4513E0036F1F4 /* Sources */,
+				C9DDFFA117E4513E0036F1F4 /* Frameworks */,
+				C9DDFFA217E4513E0036F1F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Logic Uni";
+			productName = "Logic University";
+			productReference = C9DDFFA417E4513E0036F1F4 /* Logic Uni.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9DDFF9C17E4513D0036F1F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ye Maw";
+			};
+			buildConfigurationList = C9DDFF9F17E4513D0036F1F4 /* Build configuration list for PBXProject "Logic University" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9DDFF9B17E4513D0036F1F4;
+			productRefGroup = C9DDFFA517E4513E0036F1F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9DDFFA317E4513E0036F1F4 /* Logic Uni */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9DDFFA217E4513E0036F1F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDFFB217E4513E0036F1F4 /* InfoPlist.strings in Resources */,
+				C9DDFFBA17E4513E0036F1F4 /* Default.png in Resources */,
+				C9DDFFBC17E4513E0036F1F4 /* Default@2x.png in Resources */,
+				C9DDFFBE17E4513E0036F1F4 /* Default-568h@2x.png in Resources */,
+				C9DDFFC117E4513E0036F1F4 /* MainStoryboard.storyboard in Resources */,
+				C9DDFFCB17E4534E0036F1F4 /* icon_loop_57.png in Resources */,
+				C9DDFFCD17E453540036F1F4 /* icon_loop_114.png in Resources */,
+				C9DDFFCF17E467720036F1F4 /* icon_57.png in Resources */,
+				C9DDFFD117E467E10036F1F4 /* icon_114_.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9DDFFA017E4513E0036F1F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DDFFB417E4513E0036F1F4 /* main.m in Sources */,
+				C9DDFFB817E4513E0036F1F4 /* AppDelegate.m in Sources */,
+				C9DDFFC417E4513E0036F1F4 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9DDFFB017E4513E0036F1F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DDFFB117E4513E0036F1F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9DDFFBF17E4513E0036F1F4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DDFFC017E4513E0036F1F4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9DDFFC517E4513E0036F1F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9DDFFC617E4513E0036F1F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9DDFFC817E4513E0036F1F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logic University/Logic University-Prefix.pch";
+				INFOPLIST_FILE = "Logic University/Logic University-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9DDFFC917E4513E0036F1F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logic University/Logic University-Prefix.pch";
+				INFOPLIST_FILE = "Logic University/Logic University-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9DDFF9F17E4513D0036F1F4 /* Build configuration list for PBXProject "Logic University" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DDFFC517E4513E0036F1F4 /* Debug */,
+				C9DDFFC617E4513E0036F1F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DDFFC717E4513E0036F1F4 /* Build configuration list for PBXNativeTarget "Logic Uni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DDFFC817E4513E0036F1F4 /* Debug */,
+				C9DDFFC917E4513E0036F1F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9DDFF9C17E4513D0036F1F4 /* Project object */;
+}

@@ -1,0 +1,87 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StoreSupervisor_Template.master.cs" Inherits="PresentationLayer.TemplatesWeb.StoreSupervisor_Template" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<!-- this template was designed by http://www.tristarwebdesign.co.uk - please visit for more templates & information - thank you. -->
+
+<head>
+
+<meta http-equiv="Content-Language" content="en-gb" />
+
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+
+    <link rel="stylesheet" href="/assets/css/normal.bootstarp.css" />
+    <link rel="stylesheet" href="/assets/jquery-ui/css/jquery-ui-smotness.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/store_supervisor.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <script src="/assets/js/jquery-1.10.2.min.js" type="text/javascript" ></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/jquery-ui/js/jquery-ui-1.10.3.custom.js"> </script>
+    <script src="/assets/js/jquery.extensions.js" type="text/javascript"></script>
+    <script src="/assets/js/json.js" type="text/javascript" ></script>
+    <script src="/assets/js/global.js" type="text/javascript"></script>
+<style media="screen" type="text/css">
+        .noPrint{ display: block; }
+        .yesPrint{ display: block !important; }
+    </style> 
+    <style media="print" type="text/css">
+        .noPrint{ display: none; }
+        .yesPrint{ display: block !important; }
+    </style>
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body>
+<div id="container">
+
+<div id="header" class="noPrint"><h1 style="padding:30px;">Logic University</h1></div>
+
+<div id="menu" class="noPrint">
+	<a title="home" href="DiscrepencyList.aspx">Pending Descripencies</a>&nbsp;&nbsp; |&nbsp;&nbsp; 
+    <a title="home" href="ReOrderReport.aspx">Reorders Report</a>&nbsp;&nbsp; |&nbsp;&nbsp; 
+    <a title="home" href="TrendAnalysis.aspx">Trends Analysis</a>&nbsp;&nbsp; |&nbsp;&nbsp; 
+    <a title="home" href="ClerkList.aspx">Clerk List</a>&nbsp;&nbsp; |&nbsp;&nbsp; 
+	<a title="link one" href="AccountEdit.aspx">Edit Account</a>&nbsp;&nbsp; |&nbsp;&nbsp; 
+	<a title="link two" href="/Logout.aspx">Logout</a>
+    </div>
+
+<div id="container2">
+	<div id="content">
+        
+		<div class="overflow">
+                
+			<div id="textpadding">
+                <script type="text/javascript">
+                    $(function () { $("#flash-message").flashMessage(); });
+                </script>
+                <div id="flash-message"></div>
+
+                <form id="form1" runat="server">
+                
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer" class="noPrint">Design and Develped by Team 9 (NUS~ISS SA36)</div>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#textpadding").css("min-height", $(window).height()-250);
+    });
+ </script> 
+</body>
+
+</html>

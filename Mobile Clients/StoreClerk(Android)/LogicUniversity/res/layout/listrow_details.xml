@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/txtDeptName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Dept"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#2c3e50"
+        />
+
+    <TextView
+        android:id="@+id/txtActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNeeded"
+        android:layout_alignBottom="@+id/txtNeeded"
+        android:layout_alignParentRight="true"
+        android:text="Actual"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginRight="8dp"
+        android:textColor="#2c3e50"
+        />
+
+    <TextView
+        android:id="@+id/txtNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDeptName"
+        android:layout_alignBottom="@+id/txtDeptName"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/txtActual"
+        android:text="Needed"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+    	android:textColor="#2c3e50"
+    	/>
+</RelativeLayout>

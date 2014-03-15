@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+        android:id="@+id/new_requisition"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="New Requests"/>
+    <item
+        android:id="@+id/pending_requisitions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Pending Requests"/>
+     
+<item
+        android:id="@+id/approved_requisitions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Approved Requests"/>
+
+<item
+        android:id="@+id/rejected_requisitions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Rejected Requests"/>
+
+<item
+        android:id="@+id/processing_requisitions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Processing Requests"/>
+
+<item
+        android:id="@+id/distributed_requisitions"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Distributed Requests"/>
+<item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Logout"/>
+</menu>

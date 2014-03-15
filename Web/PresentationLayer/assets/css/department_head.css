@@ -1,0 +1,28 @@
+body{text-align:center;background:url(../images/stucco.png);background-attachment:fixed;}
+#wrapper{margin:0 auto;text-align:left;width:980px;box-shadow:0px 0px 3px #444;background:#ecf0f1;}
+#header{height:50px;padding:20px 20px 30px 20px;border-bottom:2px solid #aaa;}
+#content{width:75%;padding:20px;}
+#sidebar{width:25%;padding:20px;}
+#sidebar-menu{margin:20px 0 20px 0;padding:0;list-style-type:none;}
+#sidebar-menu li{padding:0;}
+#sidebar-menu li a{padding:10px;display:block;text-decoration:none;}
+input[type=checkbox]{margin:0 10px 0 0;}
+#pendingTable thead,
+#approvedTable thead,
+#rejectedTable thead{height:50px;}
+.empname_col{width:200px;max-width:200px;}
+.item_col{width:350px;max-width:350px;}
+.qty_col{width:200px;max-width:200px;}
+.content_title_container{text-align:center;height:17px;margin:0 0 30px 0;width:100%;}
+.content_title{color:#2c3e50;font-size:25px;font-weight:bold;}
+
+#sidebar
+{
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    }
